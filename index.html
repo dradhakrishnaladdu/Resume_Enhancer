@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Resume Analyzer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Resume Enhancer</h2>
+
+    <label>Select Job Role</label>
+    <select id="jobRole">
+      <option>Software Developer</option>
+      <option>Data Analyst</option>
+      <option>Accountant</option>
+      <option>HR</option>
+    </select>
+
+    <textarea id="resumeText" placeholder="Paste your resume here..."></textarea>
+
+    <div class="buttons">
+      <button onclick="checkResume()">Check Resume</button>
+    </div>
+
+    <div class="progress-box">
+      <div id="progressBar">0%</div>
+    </div>
+
+    <div id="output"></div>
+<div id="atsOutput"></div>
+<div id="tipsOutput"></div>
+
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
